@@ -1,0 +1,113 @@
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+html {
+    box-sizing: border-box;
+    background-color: white;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.page {
+    background-color: #C4C4C4;
+    width: 660px;
+    min-height: 200px;
+    margin: 20px auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    
+    padding: 60px 80px;
+
+}
+
+.findRepos__input {
+    width: 500px;
+    height: 60px;
+    font-family: 'roboto';
+    font-size: 48px;
+    line-height: 56.25px;
+    padding-left: 13px;
+}
+
+.autocompete__option {
+    display: none;
+    width: 500px;
+    min-height: 44px;
+    background-color: #E3E3E3;
+    padding-left: 13px;
+    font-family: 'roboto';
+    font-size: 30px;
+    line-height: 35.16px;
+    border: 2px solid black;
+}
+
+.autocompete__option:hover {
+    background-color: #65CDF9;
+}
+
+.repo {
+    width: 500px;
+    min-height: 100px;
+    background-color: #E27BEB;
+    border: 1px solid black;
+    padding: 8px 16px;
+    position: relative;
+    display: none;
+}
+
+.repo__name {
+    margin: 0;
+    font-family: 'roboto';
+    line-height: 28.13px;
+    font-size: 24px;
+}
+
+.repo__owner {
+    margin: 0;
+    font-family: 'roboto';
+    line-height: 28.13px;
+    font-size: 24px;
+}
+
+
+.repo__stars {
+    margin: 0;
+    font-family: 'roboto';
+    line-height: 28.13px;
+    font-size: 24px;
+}
+
+.repo__cross {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 40px;
+    top: 33%;
+}
+
+
+.repo__crossPart1 {
+    width: 0px;
+    height: 56px;
+    border: 2px solid #FF0000;
+    transform: rotate(45deg) translate(10px, -20px);
+    position: absolute;
+}
+
+.repo__crossPart2 {
+    width: 0px;
+    height: 56px;
+    border: 2px solid #FF0000;
+    transform: rotate(-45deg) translate(20px, 10px);
+    position: absolute;
+}

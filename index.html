@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+    <div class="main">
+        <div class="autocompleteImput">
+            <form action="get" class="findRepos">
+                <label for="repos" class="findRepos__label"></label>
+                <input type="text" name="repos" class="findRepos__input">
+            </form>
+            <div class="autocomplete">
+                <div class="autocompete__option"></div>
+                <div class="autocompete__option"></div>
+                <div class="autocompete__option"></div>
+                <div class="autocompete__option"></div>
+                <div class="autocompete__option"></div>
+            </div>
+        </div>
+        <div class="selectedRepos">
+            <div class="repo">
+                <p class="repo__name"></p>
+                <p class="repo__owner"></p>
+                <p class="repo__stars"></p>
+                <div class="repo__cross">
+                    <div class="repo__crossPart1"></div>
+                    <div class="repo__crossPart2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<script src="script.js"></script> 
+</body>
+</html>
